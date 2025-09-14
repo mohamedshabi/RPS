@@ -67,12 +67,12 @@ options.forEach((option) => {
             computer.classList.remove("computershake");
 
             const userChoice = option.innerHTML;
-            user.src = "./" + userChoice + "user.png";
+            user.src = "images/" + userChoice.toLowerCase() + "user.png";
 
             const choices = ["ROCK", "PAPER", "SCISSORS"];
             const randomIndex = Math.floor(Math.random() * 3);
             const computerChoice = choices[randomIndex];
-            computer.src = "./" + computerChoice + "computer.png";
+            computer.src = "images/" + computerChoice.toLowerCase() + "computer.png";
 
             let uPoints = parseInt(upoint.innerHTML);
             let cPoints = parseInt(cpupoint.innerHTML);
